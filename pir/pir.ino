@@ -32,15 +32,17 @@ void loop(){
 
   if(val==1){
     countT++;
-    countF = 0;
   }
   else{
     countT = 0;
     countF++;
   }
 
-  if(countT == 5)
+  if(countT == 5){
     digitalWrite(luz, LOW);
+    countF = 0;
+  }
+  
   if(countF >= 30)
     digitalWrite(luz, HIGH);
   delay(1000);
