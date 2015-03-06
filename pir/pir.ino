@@ -38,8 +38,8 @@ void loop(){
     countT = 0;
     countF++;
   }
-  
-  if(countT == 3)
+
+  if(countT == 5)
     digitalWrite(luz, LOW);
   if(countF >= 30)
     digitalWrite(luz, HIGH);
